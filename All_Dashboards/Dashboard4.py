@@ -399,7 +399,7 @@ def forecast_from_bundle(bundle, recent_series, horizon):
 # --------------------------
 # Load default data if present
 # --------------------------
-DEFAULT_PATH = "data.csv"
+DEFAULT_PATH = "../data.csv"
 data = None
 if os.path.exists(DEFAULT_PATH):
     try:
