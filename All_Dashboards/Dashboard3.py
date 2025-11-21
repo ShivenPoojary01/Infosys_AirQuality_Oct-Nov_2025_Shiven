@@ -29,7 +29,6 @@ st.markdown(
         padding-top: 2rem;
         padding-bottom: 3rem;
     }
-    header {visibility: hidden;}
 
     /* HERO SECTION */
     .hero-container {
@@ -249,7 +248,7 @@ def load_data(path):
     
     # Date parsing
     if "date" in df.columns:
-        df["date"] = pd.to_datetime(df["date"], errors='coerce')
+        df["date"] = pd.to_datetime(df["date"], errors='coerce', format='mixed')
     
     # Ensure columns exist
     for p in ["pm2_5", "pm10", "so2", "no2", "o3"]:

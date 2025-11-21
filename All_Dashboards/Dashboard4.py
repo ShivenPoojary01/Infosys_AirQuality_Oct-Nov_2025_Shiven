@@ -498,8 +498,8 @@ gauge_pollutant = st.sidebar.selectbox("AQI gauge pollutant (choose one)", pollu
 horizon_opt = st.sidebar.selectbox("Forecast Horizon", ["24 Hours", "48 Hours", "72 Hours", "168 Hours (7 days)"])
 horizon_hours = int(horizon_opt.split()[0]) # Convert "24 Hours" to 24
 
-if st.sidebar.button("Update Dashboard"):
-    st.experimental_rerun()
+if st.sidebar.button("Rerun Dashboard"):
+    st.rerun()
 
 # --- Admin training controls (if admin_mode) ---
 train_button = None
